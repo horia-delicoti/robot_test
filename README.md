@@ -17,6 +17,7 @@ application on Resin.
  * `${TYPE}` = _Device type_
  * `${PATH}` = _Working directory where you git cloned this repository_
 3. Open terminal, change directory to the repository and run
+ * `pip isntall -r requirements.txt` - Install required items 
  * `resin login` - Login to resin
  * `robot --outputdir results create_app.robot` - Robot script runs the test cases and output in directory `results`
 4. Enter [Dashboard resin](https://dashboard.resin.io/apps) to check your application
