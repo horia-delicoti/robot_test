@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20160622 18:33:08.390" generator="Robot 3.0 (Python 2.7.10 on darwin)">
+<suite source="/Users/horiadelicoti/sandbox/robot_test/create_app.robot" id="s1" name="Create App">
+<test id="s1-t1" name="Create application">
+<kw name="Create application on resin" library="resin_lib">
+<arguments>
+<arg>${NAME}</arg>
+<arg>${TYPE}</arg>
+</arguments>
+<status status="PASS" endtime="20160622 18:33:13.290" starttime="20160622 18:33:08.428"></status>
+</kw>
+<status status="PASS" endtime="20160622 18:33:13.290" critical="yes" starttime="20160622 18:33:08.427"></status>
+</test>
+<test id="s1-t2" name="Install text2speech to the application">
+<kw name="Git clone text2speech" library="resin_lib">
+<status status="PASS" endtime="20160622 18:33:14.904" starttime="20160622 18:33:13.292"></status>
+</kw>
+<kw name="Add git remote resin" library="resin_lib">
+<arguments>
+<arg>${PATH}/text2speech</arg>
+<arg>${GIT}</arg>
+</arguments>
+<status status="PASS" endtime="20160622 18:33:14.912" starttime="20160622 18:33:14.904"></status>
+</kw>
+<kw name="Git push resin" library="resin_lib">
+<arguments>
+<arg>${PATH}/text2speech</arg>
+</arguments>
+<status status="PASS" endtime="20160622 18:37:50.702" starttime="20160622 18:33:14.913"></status>
+</kw>
+<status status="PASS" endtime="20160622 18:37:50.703" critical="yes" starttime="20160622 18:33:13.291"></status>
+</test>
+<doc>A test suite for creating application on Resin using resin-cli.
+It git pulls text2speech and pushes to the above application on Resin.</doc>
+<status status="PASS" endtime="20160622 18:37:50.704" starttime="20160622 18:33:08.393"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Create App" pass="2">Create App</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
