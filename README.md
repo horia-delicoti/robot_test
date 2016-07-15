@@ -22,6 +22,7 @@ Alternately, run `pip install -r requirments.txt` to install python dependencies
 3. Open terminal, change directory to the location where you cloned the repository. Afterwards run the following steps:
  * `pip install -r requirments.txt` - Install required python dependencies 
  * `resin login` - Login to resin
+ * `git clone https://github.com/resin-io/text2speech.git` - Clone [text2speech](https://github.com/resin-io/text2speech) repository
  * `robot --outputdir results create_app.robot` - Robot script runs the test cases and output in directory `results`
 4. Enter [resin dashboard](https://dashboard.resin.io/apps)
 5. More information about the run can be found in the output directory or by running: 
