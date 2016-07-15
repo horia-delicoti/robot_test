@@ -1,38 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20160623 14:13:20.110" generator="Robot 3.0 (Python 2.7.10 on darwin)">
-<suite source="/Users/horiadelicoti/sandbox/robot_test/create_app.robot" id="s1" name="Create App">
+<robot generated="20160715 13:54:19.852" generator="Robot 3.0 (Python 2.7.10 on darwin)">
+<suite source="/Users/horia/Sandbox/robot_test/create_app.robot" id="s1" name="Create App">
 <test id="s1-t1" name="Create application">
 <kw name="Create application on resin" library="resin_lib">
 <arguments>
 <arg>${NAME}</arg>
 <arg>${TYPE}</arg>
 </arguments>
-<status status="PASS" endtime="20160623 14:13:23.610" starttime="20160623 14:13:20.143"></status>
+<status status="PASS" endtime="20160715 13:54:23.856" starttime="20160715 13:54:19.879"></status>
 </kw>
-<status status="PASS" endtime="20160623 14:13:23.611" critical="yes" starttime="20160623 14:13:20.142"></status>
+<status status="PASS" endtime="20160715 13:54:23.857" critical="yes" starttime="20160715 13:54:19.879"></status>
 </test>
 <test id="s1-t2" name="Install text2speech to the application">
-<kw name="Git clone text2speech" library="resin_lib">
-<status status="PASS" endtime="20160623 14:13:24.725" starttime="20160623 14:13:23.612"></status>
-</kw>
 <kw name="Add git remote resin" library="resin_lib">
 <arguments>
 <arg>${PATH}/text2speech</arg>
 <arg>${GIT}</arg>
 </arguments>
-<status status="PASS" endtime="20160623 14:13:24.731" starttime="20160623 14:13:24.726"></status>
+<status status="PASS" endtime="20160715 13:54:23.865" starttime="20160715 13:54:23.858"></status>
 </kw>
 <kw name="Git push resin" library="resin_lib">
 <arguments>
 <arg>${PATH}/text2speech</arg>
 </arguments>
-<status status="PASS" endtime="20160623 14:13:27.899" starttime="20160623 14:13:24.731"></status>
+<status status="PASS" endtime="20160715 13:58:56.659" starttime="20160715 13:54:23.865"></status>
 </kw>
-<status status="PASS" endtime="20160623 14:13:27.899" critical="yes" starttime="20160623 14:13:23.611"></status>
+<status status="PASS" endtime="20160715 13:58:56.660" critical="yes" starttime="20160715 13:54:23.857"></status>
 </test>
 <doc>A test suite for creating application on Resin using resin-cli.
 It git pulls text2speech and pushes to the above application on Resin.</doc>
-<status status="PASS" endtime="20160623 14:13:27.900" starttime="20160623 14:13:20.112"></status>
+<status status="PASS" endtime="20160715 13:58:56.660" starttime="20160715 13:54:19.854"></status>
 </suite>
 <statistics>
 <total>
